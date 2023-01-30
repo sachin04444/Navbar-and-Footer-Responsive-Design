@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Naav from './components/Naav'
+import { BrowserRouter  } from 'react-router-dom'
 
-function App() {
+import Nfooter from './components/Nfooter'
+// import Footer from './components/Footer'
+// import Home from './components/Home'
+// import NavBar from './components/Naav'
+// import "./components/nav.css"
+// import Services from './components/Services'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Naav/>
+      <Nfooter/>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
